@@ -14,7 +14,6 @@ function SVGMap(props) {
 				return (
 					<path
 						id={location.id}
-						name={location.name}
 						d={location.path}
 						className={typeof props.locationClassName === 'function' ? props.locationClassName(location, index) : props.locationClassName}
 						tabIndex={typeof props.locationTabIndex === 'function' ? props.locationTabIndex(location, index) : props.locationTabIndex}
